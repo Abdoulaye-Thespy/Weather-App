@@ -1,0 +1,120 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+body {
+  background-image: url("./images/w3.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-position: center; /* Center the image */
+  background-size: cover;
+}
+
+
+
+    .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 15rem;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;white;
+    background-color: 
+    }
+
+  .content {
+   background-color: #cccccc;
+   width: 70%;
+   margin: auto;
+   border-radius: 2rem;
+   padding: 8rem;
+  }
+
+  .seach_title{
+    text-align: center;
+    color: #000;
+  }
+
+ .box {
+
+  background-image: url("./images/w3.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-position: center; /* Center the image */
+  background-size: cover;
+  height: 30rem;
+  margin: 5rem;
+  border-radius: 2rem;
+
+ }
+
+ .footer-copyright,
+ .footer-copyright a{
+ 	color: #fff;
+ }
+
+
+.lab {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+#inp {
+  width: 50rem;
+  height: 55px;
+  font-size: 20px;
+  background-color: #fff;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+
+.btns {
+  width: 16rem;
+  height: 58px;
+  background-color: #cc2900;
+  font-size: 17px;
+  color: white;
+  margin-left: -4px;
+  padding-top: 1px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
