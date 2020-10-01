@@ -1,8 +1,8 @@
 import { data } from './index';
 
-const unitBtn = document.getElementById('switch');
+export const unitBtn = document.getElementById('switch');
 let unit = 'C';
-const changeUnit = () => {
+export const changeUnit = () => {
   const unitBtns = document.getElementById('switch');
   document.getElementById('temp').innerHTML = `${data.townTemp} °F`;
 
@@ -13,7 +13,6 @@ const changeUnit = () => {
   } else if (unit === 'C') {
     unitBtns.innerHTML = 'SWITCH TO °C';
     let tempF = null;
-    console.log(data.townTemp);
     tempF = ((data.townTemp * 9) / 5) + 32;
     tempF = tempF.toFixed(2);
     document.getElementById('temp').innerHTML = `${tempF} °F`;

@@ -42,6 +42,7 @@ body {
   transition: width 0.4s linear;
 }
 
+
 .search_icon {
   height: 40px;
   width: 40px;
@@ -53,12 +54,10 @@ body {
   color: white;
   text-decoration: none;
 }
-
 .searchbar:hover > .search_icon {
   background: white;
   color: #e74c3c;
 }
-
 .content {
   background-color: #ccc;
   width: 70%;
