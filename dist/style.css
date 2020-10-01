@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
   background-position: center; /* Center the image */
   background-size: cover;
+  font-family: 'Abril Fatface', cursive;
 }
 
 
@@ -82,7 +83,6 @@ body {
   height: 30rem;
   margin: 5rem;
   border-radius: 2rem;
-
  }
 
  .footer-copyright,
@@ -117,4 +117,11 @@ body {
   padding-top: 1px;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+
+.data1 h3 {
+  color:  #ff0066;
+  font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
+  padding: 1rem;
 }

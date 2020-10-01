@@ -1,5 +1,6 @@
- 
+ import {addInfo} from './town'
 const searchBtn = document.getElementById('sbtn');
+let data= {};
 
   async function getWeather(town) {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${town}&appid=e099642ba8b7f8b636938fb26d4c6038&units=metric `, {mode: 'cors'});
@@ -20,12 +21,13 @@ const town = () => {
  	e.preventDefault()
  	const towns =town();
 	const twonWeather = await getWeather(towns);
-
-	const townName = twonWeather.name;
-	const townTemp = twonWeather.main.temp;
-	const townMain = twonWeather.weather[0].main;
-	const townDesc = twonWeather.weather[0].description;
-	console.log (townName, townTemp, townMain, townDesc);
+	data.townName = twonWeather.name;
+	data.townTemp = twonWeather.main.temp;
+	data.townCountry = twonWeather.sys.country;
+	data.townDesc = twonWeather.weather[0].description;
+	console.log (data);
+	addInfo(data);
+	return data;
 
 }
 
