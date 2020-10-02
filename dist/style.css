@@ -247,5 +247,13 @@ body {
 }
 
 #switch {
-  color: #cc2900;
+  color: #fff;
+  background-color:  #999966;
+  float: right;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.btnswich {
+  float: right;
 }
