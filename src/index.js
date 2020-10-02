@@ -1,3 +1,4 @@
+/*eslint-disable */
 import { addInfo } from './town';
 import { changeUnit } from './unit';
 import { changes } from './changes';
@@ -6,7 +7,7 @@ const searchBtn = document.getElementById('sbtn');
 
 
 export const data = {};
-
+/* eslint-enable */
 async function getWeather(town) {
   const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${town}&appid=e099642ba8b7f8b636938fb26d4c6038&units=metric `, { mode: 'cors' });
   const weatherData = await response.json();

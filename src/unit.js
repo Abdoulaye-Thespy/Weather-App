@@ -1,5 +1,6 @@
+/*eslint-disable */
 import { data } from './index';
-
+/* eslint-enable */
 export const unitBtn = document.getElementById('switch');
 let unit = 'C';
 export const changeUnit = (e) => {
