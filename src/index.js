@@ -1,5 +1,6 @@
 import { addInfo } from './town';
 import { changeUnit } from './unit';
+import { changes } from './changes';
 
 const searchBtn = document.getElementById('sbtn');
 
@@ -31,6 +32,7 @@ async function findWeather(e) {
   const twonWeather = await getWeather(towns);
   getData(twonWeather);
   addInfo(data);
+  changes(data);
   return data;
 }
 
@@ -39,6 +41,7 @@ async function defaults() {
   const twonWeather = await getWeather('Yaounde');
   getData(twonWeather);
   addInfo(data);
+  changes(data);
 }
 
 

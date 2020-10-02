@@ -2,7 +2,8 @@ import { data } from './index';
 
 export const unitBtn = document.getElementById('switch');
 let unit = 'C';
-export const changeUnit = () => {
+export const changeUnit = (e) => {
+  e.preventDefault();
   const unitBtns = document.getElementById('switch');
   document.getElementById('temp').innerHTML = `${data.townTemp} °F`;
 
